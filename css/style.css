@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100%;
+    width: 50%;
+}
+.wrap90{
+    width: 90%;
+    margin: auto;
+}
+.create{
+    height: 15%;
+    background-color: orange;
+    margin-bottom: 5%;
+}
+h1{
+    text-transform: capitalize;
+    line-height: 100px;
+    font-size: 36px;
+}
+#mio-nome{
+    height: 38px;
+    width: 50%;
+    border: none;
+    outline: none;
+    font-size: 32px;
+    color: black;
+    text-transform: capitalize;
+}
+.mio-nome::placeholder{
+    font-size: 32px;
+    color: black;
+    text-transform: capitalize;
+}
+
+.ing{
+    padding: 40px 0;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+}
+.lists{
+    display: flex;
+}
+.ingredients .ingredients , li{
+    text-transform: capitalize;
+    padding-bottom: 75px;
+    padding-right: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.addon{
+    margin-left: 20px;
+}
+.text{
+    font-size: 22px;
+    font-weight: bold;
+}
+#coupon{
+    width: 70%;
+    height: 35px;
+    font-size: 24px;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 20px;
+    background-color: lightyellow;
+    border-color: rgb(251, 206, 161);
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+.calculate{
+    margin: 40px;
+    padding: 15px 45px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: orange;
+    outline: none;
+    border-radius: 10px;
+}
+.price{
+    height: 100px;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    color: white;
+}
+.price span{
+    font-size: 32px;
+}

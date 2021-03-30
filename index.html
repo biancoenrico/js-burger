@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div class="create">
+            <div class="wrap90">
+                <h1>create your burger</h1>
+            </div>
+        </div>
+        
+        <div class="wrap90">
+
+            <input id="mio-nome" type="text" placeholder="mio nome"><br>
+            <span class="ing">ingredients</span>
+
+            <div class="lists">
+                <ul class="ingredients">
+                    <li>cheese
+                        <img src="" alt="">
+                        <label for="addon"></label>
+                        <input class="addon" type="checkbox" value="10">
+                    </li>
+                    <li>egg
+                        <img src="" alt="">
+                        <label for="addon"></label>
+                        <input class="addon" type="checkbox" value="5">
+                    </li>
+                    <li>mustard
+                        <img src="" alt="">
+                        <label for="addon"></label>
+                        <input class="addon" type="checkbox" value="8">
+                    </li>
+                </ul>
+                <ul class="ingredients">
+                    <li>tomato
+                        <img src="" alt="">
+                        <label for="addon"></label>
+                        <input class="addon" type="checkbox" value="20">
+                    </li>
+                    <li>lettuce
+                        <img src="" alt="">
+                        <label for="addon"></label>
+                        <input class="addon" type="checkbox" value="11">
+                    </li>
+                    <li>ketchup
+                        <img src="" alt="">
+                        <label for="addon"></label>
+                        <input class="addon" type="checkbox" value="17">
+                    </li>
+                </ul>
+            </div>
+            
+            <div>
+                <span class="text">Discount Coupon</span>
+                <input id="coupon" type="text" placeholder="12354ABCDEF">
+            </div>
+            <div class="flex">
+                <button id="button" class="calculate" onclick="onclick()">calculate</button>
+            </div>
+        </div>
+
+        <div class="price">
+            <span class="text">Your Price</span>
+            <span id="tot" class="text"></span>
+        </div>
+        
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
