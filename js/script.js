@@ -10,13 +10,15 @@ calculate.addEventListener('click', function(){
     console.log(ingredient);
 
     if(nomePanino == ''){
-        alert('dai un nome al tuo panino')
-    }
+        alert('dai un nome al panino')
+    }else{
 
-    for (var i = 0; i < ingredient.length; i++) {
-        if (ingredient[i].checked) {
-            costoBase = costoBase + parseInt(ingredient[i].value);
+        for (var i = 0; i < ingredient.length; i++) {
+            if (ingredient[i].checked) {
+                costoBase = costoBase + parseInt(ingredient[i].value);
+            }
         }
+
     }
 
     var coupon = document.getElementById('coupon').value;
@@ -26,10 +28,12 @@ calculate.addEventListener('click', function(){
 
     document.getElementById('tot').innerHTML ='$' + costoBase;
 
-    if(nomePanino == ''){
-        document.getElementById("button").disabled = false; 
-    }else{
+    if(nomePanino != ''){
         document.getElementById("button").disabled = true; 
+    }else{
+        document.getElementById("button").disabled = false;
     }
+    
+        
 })
 
