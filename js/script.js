@@ -14,6 +14,10 @@ calculate.addEventListener('click', function(){
         }
         
     }
+    var coupon = document.getElementById('coupon').value;
+    if(coupon == 'sconto123' || coupon == 'tantafantasia' || coupon == 'fammimangiare' || coupon == 'sotirchio'){
+       costoBase = costoBase - costoBase * 0.20;
+    }
 
     document.getElementById('tot').innerHTML ='$' + costoBase;
 
