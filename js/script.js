@@ -22,8 +22,10 @@ calculate.addEventListener('click', function(){
     }
 
     var coupon = document.getElementById('coupon').value;
-    if(coupon == 'sconto123' || coupon == 'tantafantasia' || coupon == 'fammimangiare' || coupon == 'sotirchio'){
-       costoBase = costoBase - costoBase * 0.20;
+    var couponList = ['sconto123', 'tantafantasia', 'fammimangiare', 'sotirchio',]
+
+    if(couponList.includes(coupon)){
+        costoBase = costoBase - costoBase * 0.20;
     }
 
     document.getElementById('tot').innerHTML ='$' + costoBase;
